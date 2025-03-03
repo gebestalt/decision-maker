@@ -64,3 +64,50 @@ p {
     font-size: 1.2rem;
     opacity: 0.9;
 }
+
+#home button {
+    background: #FFD700;
+    color: #333;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+#home button:hover {
+    background: #FFC107;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+
+.container {
+    background: white;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Dropdown */
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
