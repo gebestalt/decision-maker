@@ -107,11 +107,11 @@ section {
 
 /* Spacing for Sections */
 #about {
-    padding-bottom: 20px; /* Less bottom padding */
+    padding-bottom: 10px; 
 }
 
 #tool {
-    padding-top: 20px; /* Less top padding */
+    padding-top: 10px;
 }
 
 /* Dropdown */
