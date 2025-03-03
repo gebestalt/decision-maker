@@ -198,6 +198,78 @@ button {
     background: #1565C0;
 }
 
+/* QuickPick Lucky Guess Game */
+#game {
+    background: #E3F2FD;
+    padding: 50px 20px;
+}
+
+#game h2 {
+    font-size: 2rem;
+    color: #2E7D32;
+    margin-bottom: 15px;
+}
+
+#game p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 400px; 
+}
+
+/* Input Field */
+#userGuess {
+    padding: 12px;
+    font-size: 1.2rem;
+    width: 150px; 
+    text-align: center;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    height: 50px; 
+    line-height: 1.2rem; 
+}
+
+/* Button */
+#playGameButton {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#playGameButton:hover {
+    background: #2E7D32;
+}
+
+/* Game Feedback */
+#gameResult {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Win or Loss Image Display */
+.game-img {
+    width: 80px;
+    margin-top: 15px;
+}
+
 /* Contact Form */
 form {
     display: flex;
@@ -230,7 +302,7 @@ input, textarea {
     font-size: 1rem;
 }
 
-/* 🎯 Preferred Contact Method (Radio Buttons) */
+/* Preferred Contact Method (Radio Buttons) */
 .radio-group {
     display: flex;
     align-items: center;
