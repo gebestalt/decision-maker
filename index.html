@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickPick - Instant Decision Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">How It Works</a></li>
+                <li><a href="#tool">Decision Maker</a></li>
+                <li><a href="#funFact">Fun Fact</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="container">
+            <h1>QuickPick</h1>
+            <p>Can't decide? Let us choose for you!</p>
+            <button id="getStartedButton">Get Started</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p>QuickPick takes the stress out of decision-making! Select a category, click the button, and let our system generate a random, fun choice for you.</p>
+            <p>Perfect for when you're indecisive about food, movies, or activities!</p>
+        </div>
+    </section>
+
+    <!-- Decision Maker Tool -->
+    <section id="tool">
+        <div class="container">
+            <h2>Make a Decision</h2>
+            <label for="categorySelect">Choose a category:</label>
+            <select id="categorySelect">
+                <option value="food">What should I eat?</option>
+                <option value="movie">What movie should I watch?</option>
+                <option value="activity">What should I do today?</option>
+                <option value="random">Surprise me!</option>
+            </select>
+
+            <button id="generateButton">Make a Decision</button>
+
+            <div id="resultContainer">
+                <p id="result">Your decision will appear here...</p>
+            </div>
+
+            <button id="tryAgainButton" class="hidden">Try Again</button>
+        </div>
+    </section>
+
+    <!-- Fun Fact Section -->
+    <section id="funFact">
+        <div class="container">
+            <h2>Did You Know?</h2>
+            <p id="randomFact">Click the button to reveal a fun fact!</p>
+            <button id="factButton">Show Me a Fact</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Have a suggestion? Want to contribute ideas for new decision categories?</p>
+            <p>Email us at <a href="mailto:info@quickpick.com">info@quickpick.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 QuickPick. Making decisions easier, one click at a time.</p>
+        <p>Need help deciding something else? <a href="#tool">Try QuickPick again!</a></p>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
+
+
