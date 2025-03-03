@@ -105,6 +105,15 @@ section {
     transform: scale(1.02);
 }
 
+/* Spacing for Sections */
+#about {
+    padding-bottom: 20px; /* Less bottom padding */
+}
+
+#tool {
+    padding-top: 20px; /* Less top padding */
+}
+
 /* Dropdown */
 select {
     width: 100%;
