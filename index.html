@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriela Castillo-Londono">
+    <meta name="description" content="QuickPick - A fun decision-making tool to help you choose what to eat, watch, or do!">
+    <meta name="keywords" content="decision maker, random choices, fun tool, food picker, movie selector">
     <title>QuickPick - Instant Decision Maker</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -17,6 +20,7 @@
                 <li><a href="#tool">Decision Maker</a></li>
                 <li><a href="#funFact">Fun Fact</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button id="toggleTheme">🌙 Light/Dark</button></li>
             </ul>
         </nav>
     </header>
@@ -70,18 +74,39 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Form -->
     <section id="contact">
         <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Have a suggestion? Want to contribute ideas for new decision categories?</p>
-            <p>Email us at <a href="mailto:info@quickpick.com">info@quickpick.com</a></p>
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Full Name (Required):</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+
+                <label>Preferred Contact Method:</label>
+                <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+                <label for="contactPhone">Phone</label>
+
+                <input type="radio" id="contactEmail" name="contactMethod" value="email">
+                <label for="contactEmail">Email</label>
+
+                <label for="comments">Comments (Required):</label>
+                <textarea id="comments" name="comments" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formMessage"></p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 QuickPick. Making decisions easier, one click at a time.</p>
+        <p>&copy; 2024 QuickPick. Making decisions easier, one click at a time.</p>
         <p>Need help deciding something else? <a href="#tool">Try QuickPick again!</a></p>
     </footer>
 
@@ -89,5 +114,3 @@
 
 </body>
 </html>
-
-
