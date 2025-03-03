@@ -50,7 +50,7 @@ nav ul li a:hover, #toggleTheme:hover {
     color: #FFD700;
 }
 
-/* 🎭 Hero Section */
+/* Hero Section */
 #home {
     background: linear-gradient(to right, #4CAF50, #2E7D32);
     color: #222;
@@ -213,5 +213,51 @@ input[type="radio"] {
 }
 
 /* Footer */
-footer
 
+footer {
+    background-color: #2E7D32;
+    color: white;
+    padding: 15px;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #FFC107;
+}
+
+/* Light/Dark Mode Support */
+.dark-mode {
+    background-color: #222;
+    color: #ddd;
+}
+
+.dark-mode nav {
+    background: #1a1a1a;
+}
+
+.dark-mode .container {
+    background: #333;
+    color: white;
+}
+
+.dark-mode button {
+    background: #FFD700;
+    color: #333;
+}
+
+.dark-mode button:hover {
+    background: #FFC107;
+}
+
+.dark-mode select,
+.dark-mode input,
+.dark-mode textarea {
+    background: #444;
+    color: white;
+    border-color: #FFD700;
+}
