@@ -6,7 +6,7 @@
     <meta name="author" content="Gabriela Castillo-Londono">
     <meta name="description" content="QuickPick - A fun decision-making tool to help you choose what to eat, watch, or do!">
     <meta name="keywords" content="decision maker, random choices, fun tool, food picker, movie selector">
-    <title>QuickPick - Instant Decision Maker</title>
+    <title>QuickPick: Instant Decision Maker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -76,6 +76,20 @@
             <h2>Did You Know?</h2>
             <p id="randomFact">Click the button to reveal a fun fact!</p>
             <button id="factButton">Show Me a Fact</button>
+        </div>
+    </section>
+
+    <!-- QuickPick Lucky Guess Game -->
+    <section id="game">
+        <div class="container">
+            <h2>QuickPick Lucky Guess</h2>
+            <p>Think you can predict the next QuickPick choice? Pick a number between 1 and 10!</p>
+            <div class="game-container">
+                <input type="number" id="userGuess" min="1" max="10" placeholder="Enter a number">
+                <button id="playGameButton">Try Your Luck</button>
+            </div>
+            <p id="gameResult"></p>
+            <div id="gameFeedback"></div>
         </div>
     </section>
 

@@ -100,6 +100,14 @@ p {
     margin-bottom: 25px;
 }
 
+#about {
+    padding-bottom: 15px; 
+}
+
+#tool {
+    padding-top: 15px;
+}
+
 /* Decision Maker Section */
 .container {
     background: white;
