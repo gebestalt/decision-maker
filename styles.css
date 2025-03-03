@@ -13,6 +13,12 @@ body {
     color: #333;
 }
 
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px; 
+}
+
 /* Navigation Bar */
 nav {
     background: #2E7D32;
@@ -88,6 +94,12 @@ nav ul li a:hover {
 /* Sections */
 section {
     padding: 40px 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6; 
+    margin-bottom: 30px; 
 }
 
 .container {
