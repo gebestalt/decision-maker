@@ -94,11 +94,13 @@
                 <input type="email" id="email" name="email">
 
                 <label>Preferred Contact Method:</label>
-                <input type="radio" id="contactPhone" name="contactMethod" value="phone">
-                <label for="contactPhone">Phone</label>
+                    <div class="radio-group">
+                    <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+                    <label for="contactPhone">Phone</label>
 
-                <input type="radio" id="contactEmail" name="contactMethod" value="email">
-                <label for="contactEmail">Email</label>
+                    <input type="radio" id="contactEmail" name="contactMethod" value="email">
+                    <label for="contactEmail">Email</label>
+                    </div>
 
                 <label for="comments">Comments (Required):</label>
                 <textarea id="comments" name="comments" required></textarea>
