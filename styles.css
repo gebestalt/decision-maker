@@ -9,14 +9,8 @@
 
 body {
     background-color: #f8f9fa;
-    text-align: center;
     color: #333;
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 30px; 
+    text-align: center;
 }
 
 /* Navigation Bar */
@@ -28,50 +22,52 @@ nav {
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+nav ul li a, #toggleTheme {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, #toggleTheme:hover {
     color: #FFD700;
 }
 
-/* Hero Section */
+/* 🎭 Hero Section */
 #home {
     background: linear-gradient(to right, #4CAF50, #2E7D32);
     color: #222;
     padding: 100px 20px;
     margin-top: 50px;
-    text-align: center;
 }
 
 #home h1 {
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds subtle contrast */
+    margin-bottom: 20px;
 }
 
 #home p {
     font-size: 1.2rem;
     opacity: 0.9;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Improves contrast */
+    margin-bottom: 20px;
 }
 
 #home button {
@@ -82,7 +78,6 @@ nav ul li a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 15px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -90,18 +85,25 @@ nav ul li a:hover {
     background: #FFC107;
 }
 
-
 /* Sections */
 section {
-    padding: 40px 20px;
+    padding: 50px 20px;
+    max-width: 1280px;
+    margin: auto;
 }
 
-section p {
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+p {
     font-size: 1.2rem;
-    line-height: 5; 
-    margin-bottom: 30px; 
+    line-height: 1.8;
+    margin-bottom: 25px;
 }
 
+/* Decision Maker Section */
 .container {
     background: white;
     width: 80%;
@@ -115,15 +117,6 @@ section p {
 
 .container:hover {
     transform: scale(1.02);
-}
-
-/* Spacing for Sections */
-#about {
-    padding-bottom: 10px; 
-}
-
-#tool {
-    padding-top: 10px;
 }
 
 /* Dropdown */
@@ -200,26 +193,25 @@ button {
     background: #1565C0;
 }
 
-/* Contact Section */
-#contact {
-    background: #f5f5f5;
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-left: 10px;
 }
 
 /* Footer */
-footer {
-    background-color: #2E7D32;
-    color: white;
-    padding: 15px;
-    font-size: 0.9rem;
-    margin-top: 40px;
-}
+footer
 
-footer a {
-    color: #FFD700;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: #FFC107;
-}
